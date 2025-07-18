@@ -71,8 +71,8 @@ export default async function ChatLayout({
 
 
 </div>
-{/* <ChatList chats={chats}/> */}
-<ChatListWrapper token={token}/>
+  <ChatList chats={chats}/>  
+{/* <ChatListWrapper token={token}/> */}
           </div>
         </ResizablePanel>
         <ResizableHandle withHandle />
