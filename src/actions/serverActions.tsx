@@ -31,7 +31,7 @@ export async function loginAction(prevState: any, formData: FormData) {
 export const handleGoogleAuth = async (code: string) => {
   const clientId = process.env.GOOGLE_CLIENT_ID!;
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET!;
-  const redirectUri = 'http://localhost:3000'; // Must match Google Console
+  const redirectUri = 'https://chatapp-coral-one.vercel.app/chat'; // Must match Google Console
   const cookieStore = await cookies();
 
   try {
