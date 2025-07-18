@@ -26,7 +26,7 @@ useEffect(() => {
   if (!chatId || !token) return;
 
   fetchHistory().then(() => {
-    const socket = new WebSocket(`ws://quickchat.fly.dev/ws/realchat/${chatId}/?token=${token.value}`);
+    const socket = new WebSocket(`wss://quickchat.fly.dev/ws/realchat/${chatId}/?token=${token.value}`);
     ws.current = socket;
 
     socket.onopen = () => {
