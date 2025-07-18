@@ -26,17 +26,13 @@ const ChatListWrapper = ({ token }) => {
     }
   };
 
-  useEffect(() => {
-    if (!token) return;
+ 
     
     fetchChats(); // Initial fetch
 
-    const interval = setInterval(() => {
-      fetchChats(); // Refresh every 10s
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [token]);
+ 
+ 
+ 
 
   return <ChatList chats={chats} />;
 };
